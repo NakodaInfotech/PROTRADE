@@ -1,0 +1,88 @@
+﻿
+Imports BL
+
+Public Class SelectPO
+
+    Public PARTYNAME As String = ""
+    Public PONO As Integer = 0
+    Public FRMSTRING As String = ""
+    Public DT As New DataTable
+
+    Private Sub cmdexit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdexit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub SelectPO_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Windows.Forms.Keys.Escape Then
+            Me.Close()
+        ElseIf e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub SelectPO_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        fillgrid()
+    End Sub
+
+    Sub fillgrid()
+        Try
+            Cursor.Current = Cursors.WaitCursor
+
+            Dim where As String = ""
+            If PONO <> 0 Then where = where & " AND PONO = " & PONO
+            If PARTYNAME <> "" Then where = where & " AND NAME = '" & PARTYNAME & "'"
+            If FRMSTRING = "GRN FANCY" Then where = where & " AND ORDERTYPE = 'FINISH'" Else where = where & " AND ORDERTYPE = 'GREY'"
+            Dim objclspreq As New ClsCommon()
+            Dim dt As DataTable = objclspreq.search("*", "", " (SELECT PURCHASEORDER.PO_NO AS PONO, ISNULL(LEDGERS.Acc_cmpname, '') AS NAME, PURCHASEORDER.PO_DATE AS DATE, PURCHASEORDER_DESC.PO_GRIDSRNO AS GRIDSRNO, ISNULL(ITEMMASTER.item_name, '') AS ITEMNAME, ISNULL(QUALITYMASTER.QUALITY_name, '') AS QUALITY, ISNULL(DESIGNMASTER.DESIGN_NO, '') AS DESIGNNO, ISNULL(PURCHASEORDER_DESC.PO_GRIDREMARKS, '') AS GRIDREMARKS, ISNULL(COLORMASTER.COLOR_name, '') AS COLOR, (PURCHASEORDER_DESC.PO_QTY - PURCHASEORDER_DESC.PO_RECDQTY) AS QTY, ISNULL(UNITMASTER.unit_abbr, '') AS UNIT, PURCHASEORDER_DESC.PO_CUT AS CUT, ROUND(PURCHASEORDER_DESC.PO_MTRS - PURCHASEORDER_DESC.PO_RECDMTRS, 2) AS MTRS, ISNULL(DELIVERYATLEDGERS.Acc_cmpname, '') AS TONAME, PURCHASEORDER.PO_DUEDATE AS DUEDATE, ISNULL(GROUPMASTER.group_name, '') AS GROUPNAME, ISNULL(PURCHASEORDER_DESC.PO_RATE, 0) AS RATE, ISNULL(PURCHASEORDER.PO_REFNO, '') AS ORDERNO, 'PURCHASEORDER' AS [TYPE], ISNULL(PO_ORDERTYPE,'GREY') AS ORDERTYPE FROM PURCHASEORDER INNER JOIN PURCHASEORDER_DESC ON PURCHASEORDER.PO_YEARID = PURCHASEORDER_DESC.PO_YEARID AND PURCHASEORDER.PO_NO = PURCHASEORDER_DESC.PO_NO INNER JOIN LEDGERS ON PURCHASEORDER.PO_LEDGERID = LEDGERS.Acc_id INNER JOIN GROUPMASTER ON LEDGERS.Acc_groupid = GROUPMASTER.group_id LEFT OUTER JOIN LEDGERS AS DELIVERYATLEDGERS ON PURCHASEORDER_DESC.PO_TOLEDGERID = DELIVERYATLEDGERS.Acc_id LEFT OUTER JOIN UNITMASTER ON PURCHASEORDER_DESC.PO_QTYUNITID = UNITMASTER.unit_id LEFT OUTER JOIN COLORMASTER ON PURCHASEORDER_DESC.PO_COLORID = COLORMASTER.COLOR_id LEFT OUTER JOIN QUALITYMASTER ON PURCHASEORDER_DESC.PO_QUALITYID = QUALITYMASTER.QUALITY_id LEFT OUTER JOIN ITEMMASTER ON PURCHASEORDER_DESC.PO_ITEMID = ITEMMASTER.item_id LEFT OUTER JOIN DESIGNMASTER ON PURCHASEORDER_DESC.PO_DESIGNID = DESIGNMASTER.DESIGN_id  WHERE PURCHASEORDER_DESC.PO_CLOSED='False' AND ROUND(PURCHASEORDER_DESC.PO_MTRS - PURCHASEORDER_DESC.PO_RECDMTRS,2) > 0 AND PO_VERIFIED = 'True' AND PURCHASEORDER.PO_YEARID = " & YearId & " UNION ALL SELECT OPENINGPURCHASEORDER.OPO_NO AS PONO, ISNULL(LEDGERS.Acc_cmpname, '') AS NAME, OPENINGPURCHASEORDER.OPO_DATE AS DATE, OPENINGPURCHASEORDER_DESC.OPO_GRIDSRNO AS GRIDSRNO, ISNULL(ITEMMASTER.item_name, '') AS ITEMNAME, ISNULL(QUALITYMASTER.QUALITY_name, '') AS QUALITY, ISNULL(DESIGNMASTER.DESIGN_NO, '') AS DESIGNNO, ISNULL(OPENINGPURCHASEORDER_DESC.OPO_GRIDREMARKS, '') AS GRIDREMARKS, ISNULL(COLORMASTER.COLOR_name, '') AS COLOR, (OPENINGPURCHASEORDER_DESC.OPO_QTY - OPENINGPURCHASEORDER_DESC.OPO_RECDQTY) AS QTY, ISNULL(UNITMASTER.unit_abbr, '') AS UNIT, OPENINGPURCHASEORDER_DESC.OPO_CUT AS CUT, ROUND(OPENINGPURCHASEORDER_DESC.OPO_MTRS - OPENINGPURCHASEORDER_DESC.OPO_RECDMTRS, 2) AS MTRS, ISNULL(DELIVERYATLEDGERS.Acc_cmpname, '') AS TONAME, OPENINGPURCHASEORDER.OPO_DUEDATE AS DUEDATE, ISNULL(GROUPMASTER.group_name, '') AS GROUPNAME, ISNULL(OPENINGPURCHASEORDER_DESC.OPO_RATE, 0) AS RATE, ISNULL(OPENINGPURCHASEORDER.OPO_REFNO, '') AS ORDERNO, 'OPENING' AS [TYPE] , ISNULL(OPO_ORDERTYPE,'GREY') AS ORDERTYPE FROM OPENINGPURCHASEORDER INNER JOIN OPENINGPURCHASEORDER_DESC ON OPENINGPURCHASEORDER.OPO_YEARID = OPENINGPURCHASEORDER_DESC.OPO_YEARID AND OPENINGPURCHASEORDER.OPO_NO = OPENINGPURCHASEORDER_DESC.OPO_NO INNER JOIN LEDGERS ON OPENINGPURCHASEORDER.OPO_LEDGERID = LEDGERS.Acc_id INNER JOIN GROUPMASTER ON LEDGERS.Acc_groupid = GROUPMASTER.group_id LEFT OUTER JOIN LEDGERS AS DELIVERYATLEDGERS ON OPENINGPURCHASEORDER_DESC.OPO_TOLEDGERID = DELIVERYATLEDGERS.Acc_id LEFT OUTER JOIN UNITMASTER ON OPENINGPURCHASEORDER_DESC.OPO_QTYUNITID = UNITMASTER.unit_id LEFT OUTER JOIN COLORMASTER ON OPENINGPURCHASEORDER_DESC.OPO_COLORID = COLORMASTER.COLOR_id LEFT OUTER JOIN QUALITYMASTER ON OPENINGPURCHASEORDER_DESC.OPO_QUALITYID = QUALITYMASTER.QUALITY_id LEFT OUTER JOIN ITEMMASTER ON OPENINGPURCHASEORDER_DESC.OPO_ITEMID = ITEMMASTER.item_id LEFT OUTER JOIN DESIGNMASTER ON OPENINGPURCHASEORDER_DESC.OPO_DESIGNID = DESIGNMASTER.DESIGN_id WHERE OPENINGPURCHASEORDER_DESC.OPO_CLOSED='False' AND ROUND(OPENINGPURCHASEORDER_DESC.OPO_MTRS - OPENINGPURCHASEORDER_DESC.OPO_RECDMTRS,2) > 0 AND OPO_VERIFIED = 'True' AND OPENINGPURCHASEORDER.OPO_YEARID = " & YearId & ") AS T", where & " order by T.DATE, T.PONO")
+            gridbilldetails.DataSource = dt
+            If dt.Rows.Count > 0 Then
+                gridbill.FocusedRowHandle = gridbill.RowCount - 1
+                gridbill.TopRowIndex = gridbill.RowCount - 15
+            End If
+        Catch ex As Exception
+            If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
+        Finally
+            Cursor.Current = Cursors.Default
+
+        End Try
+    End Sub
+
+    Private Sub cmdok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdok.Click
+        Try
+
+            DT.Columns.Add("PONO")
+            DT.Columns.Add("NAME")
+            DT.Columns.Add("PODATE")
+            DT.Columns.Add("GRIDSRNO")
+            DT.Columns.Add("ITEMNAME")
+            DT.Columns.Add("QUALITY")
+            DT.Columns.Add("DESIGNNO")
+            DT.Columns.Add("COLOR")
+            DT.Columns.Add("QTY")
+            DT.Columns.Add("MTRS")
+            DT.Columns.Add("TONAME")
+            DT.Columns.Add("DUEDATE")
+            DT.Columns.Add("GROUPNAME")
+            DT.Columns.Add("RATE")
+            DT.Columns.Add("TYPE")
+
+            Dim SELECTEDROWS As Int32() = gridbill.GetSelectedRows()
+            For I As Integer = 0 To Val(SELECTEDROWS.Length - 1)
+                Dim dtrow As DataRow = gridbill.GetDataRow(SELECTEDROWS(I))
+                DT.Rows.Add(dtrow("PONO"), dtrow("NAME"), dtrow("DATE"), Val(dtrow("GRIDSRNO")), dtrow("ITEMNAME"), dtrow("QUALITY"), dtrow("DESIGNNO"), dtrow("COLOR"), Val(dtrow("QTY")), Val(dtrow("MTRS")), dtrow("TONAME"), dtrow("DUEDATE"), dtrow("GROUPNAME"), Val(dtrow("RATE")), dtrow("TYPE"))
+            Next
+            Me.Close()
+
+        Catch ex As Exception
+            If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
+        End Try
+    End Sub
+
+    Private Sub gridquotation_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+        Try
+            cmdok_Click(sender, e)
+        Catch ex As Exception
+            If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
+        End Try
+    End Sub
+End Class
