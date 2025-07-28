@@ -1485,7 +1485,7 @@ line1:
     End Sub
 
     Private Sub txtzipcode_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtzipcode.KeyPress, TXTEFFECTIVEPER.KeyPress, TXTWHOLESALEDISC.KeyPress, TXTRETAILDISC.KeyPress, TXTCDPER.KeyPress
-        numdotkeypress(e, txtzipcode, Me)
+        numdotkeypress(e, sender, Me)
     End Sub
 
     Private Sub txtcrdays_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtcrdays.KeyPress, TXTKMS.KeyPress, TXTWHATSAPPNO.KeyPress
