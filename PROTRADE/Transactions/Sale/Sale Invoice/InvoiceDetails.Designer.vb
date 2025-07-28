@@ -24,6 +24,7 @@ Partial Class InvoiceDetails
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InvoiceDetails))
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.CHKBLANKPAPER = New System.Windows.Forms.CheckBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CHKMULTI = New System.Windows.Forms.CheckBox()
         Me.TXTCOPIES = New System.Windows.Forms.TextBox()
@@ -104,7 +105,7 @@ Partial Class InvoiceDetails
         Me.lbl = New System.Windows.Forms.Label()
         Me.PRINTDIALOG = New System.Windows.Forms.PrintDialog()
         Me.PRINTDOC = New System.Drawing.Printing.PrintDocument()
-        Me.CHKBLANKPAPER = New System.Windows.Forms.CheckBox()
+        Me.CHKEFFECTIVERATE = New System.Windows.Forms.CheckBox()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,6 +116,7 @@ Partial Class InvoiceDetails
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.CHKEFFECTIVERATE)
         Me.BlendPanel1.Controls.Add(Me.CHKBLANKPAPER)
         Me.BlendPanel1.Controls.Add(Me.Label4)
         Me.BlendPanel1.Controls.Add(Me.CHKMULTI)
@@ -139,6 +141,17 @@ Partial Class InvoiceDetails
         Me.BlendPanel1.Name = "BlendPanel1"
         Me.BlendPanel1.Size = New System.Drawing.Size(1234, 581)
         Me.BlendPanel1.TabIndex = 5
+        '
+        'CHKBLANKPAPER
+        '
+        Me.CHKBLANKPAPER.AutoSize = True
+        Me.CHKBLANKPAPER.BackColor = System.Drawing.Color.White
+        Me.CHKBLANKPAPER.Location = New System.Drawing.Point(640, 4)
+        Me.CHKBLANKPAPER.Name = "CHKBLANKPAPER"
+        Me.CHKBLANKPAPER.Size = New System.Drawing.Size(100, 18)
+        Me.CHKBLANKPAPER.TabIndex = 805
+        Me.CHKBLANKPAPER.Text = "Blank Header"
+        Me.CHKBLANKPAPER.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -301,7 +314,7 @@ Partial Class InvoiceDetails
         '
         Me.gsrno.Caption = "Sr. No"
         Me.gsrno.FieldName = "SRNO"
-        Me.gsrno.ImageIndex = 1
+        Me.gsrno.ImageOptions.ImageIndex = 1
         Me.gsrno.Name = "gsrno"
         Me.gsrno.OptionsColumn.AllowEdit = False
         Me.gsrno.Visible = True
@@ -352,7 +365,7 @@ Partial Class InvoiceDetails
         '
         Me.gname.Caption = "Name"
         Me.gname.FieldName = "NAME"
-        Me.gname.ImageIndex = 0
+        Me.gname.ImageOptions.ImageIndex = 0
         Me.gname.Name = "gname"
         Me.gname.OptionsColumn.AllowEdit = False
         Me.gname.Visible = True
@@ -942,16 +955,17 @@ Partial Class InvoiceDetails
         Me.PRINTDIALOG.ShowHelp = True
         Me.PRINTDIALOG.UseEXDialog = True
         '
-        'CHKBLANKPAPER
+        'CHKEFFECTIVERATE
         '
-        Me.CHKBLANKPAPER.AutoSize = True
-        Me.CHKBLANKPAPER.BackColor = System.Drawing.Color.White
-        Me.CHKBLANKPAPER.Location = New System.Drawing.Point(640, 4)
-        Me.CHKBLANKPAPER.Name = "CHKBLANKPAPER"
-        Me.CHKBLANKPAPER.Size = New System.Drawing.Size(100, 18)
-        Me.CHKBLANKPAPER.TabIndex = 805
-        Me.CHKBLANKPAPER.Text = "Blank Header"
-        Me.CHKBLANKPAPER.UseVisualStyleBackColor = False
+        Me.CHKEFFECTIVERATE.AutoSize = True
+        Me.CHKEFFECTIVERATE.BackColor = System.Drawing.Color.Transparent
+        Me.CHKEFFECTIVERATE.Location = New System.Drawing.Point(746, 4)
+        Me.CHKEFFECTIVERATE.Name = "CHKEFFECTIVERATE"
+        Me.CHKEFFECTIVERATE.Size = New System.Drawing.Size(98, 18)
+        Me.CHKEFFECTIVERATE.TabIndex = 920
+        Me.CHKEFFECTIVERATE.Text = "Effective Rate"
+        Me.CHKEFFECTIVERATE.UseVisualStyleBackColor = False
+        Me.CHKEFFECTIVERATE.Visible = False
         '
         'InvoiceDetails
         '
@@ -1056,4 +1070,5 @@ Partial Class InvoiceDetails
     Friend WithEvents TOOLWHATSAPP As ToolStripButton
     Friend WithEvents GTOCITY As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents CHKBLANKPAPER As CheckBox
+    Friend WithEvents CHKEFFECTIVERATE As CheckBox
 End Class

@@ -178,6 +178,7 @@ Public Class InvoiceDetails
                 OBJINVOICE.INVNO = Val(I)
                 OBJINVOICE.NOOFCOPIES = Val(TXTCOPIES.Text.Trim)
                 OBJINVOICE.BLANKPAPER = CHKBLANKPAPER.Checked
+                OBJINVOICE.EFFECTIVERATE = CHKEFFECTIVERATE.Checked
                 OBJINVOICE.Show()
                 OBJINVOICE.Close()
                 ALATTACHMENT.Add(Application.StartupPath & "\INVOICE_" & I & ".pdf")
@@ -230,6 +231,7 @@ Public Class InvoiceDetails
                     OBJINVOICE.INVNO = Val(ROW("SRNO"))
                     OBJINVOICE.NOOFCOPIES = Val(TXTCOPIES.Text.Trim)
                     OBJINVOICE.BLANKPAPER = CHKBLANKPAPER.Checked
+                    OBJINVOICE.EFFECTIVERATE = CHKEFFECTIVERATE.Checked
                     OBJINVOICE.Show()
                     OBJINVOICE.Close()
                     ALATTACHMENT.Add(Application.StartupPath & "\INVOICE_" & Val(ROW("SRNO")) & ".pdf")
