@@ -1484,7 +1484,7 @@ line1:
         pcase(txtadd2)
     End Sub
 
-    Private Sub txtzipcode_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtzipcode.KeyPress
+    Private Sub txtzipcode_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtzipcode.KeyPress, TXTEFFECTIVEPER.KeyPress, TXTWHOLESALEDISC.KeyPress, TXTRETAILDISC.KeyPress, TXTCDPER.KeyPress
         numdotkeypress(e, txtzipcode, Me)
     End Sub
 
