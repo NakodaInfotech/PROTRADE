@@ -73,6 +73,8 @@ Partial Class AccountsMaster
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.CMBSUBTYPE = New System.Windows.Forms.ComboBox()
         Me.CMDHINDI = New System.Windows.Forms.Button()
         Me.TXTHINDINAME = New System.Windows.Forms.TextBox()
         Me.Label53 = New System.Windows.Forms.Label()
@@ -194,8 +196,12 @@ Partial Class AccountsMaster
         Me.TXTIFSC = New System.Windows.Forms.TextBox()
         Me.TXTACCNO = New System.Windows.Forms.TextBox()
         Me.Ep = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.CMBSUBTYPE = New System.Windows.Forms.ComboBox()
+        Me.TXTRETAILDISC = New System.Windows.Forms.TextBox()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.TXTWHOLESALEDISC = New System.Windows.Forms.TextBox()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.TXTEFFECTIVEPER = New System.Windows.Forms.TextBox()
+        Me.Label70 = New System.Windows.Forms.Label()
         Me.BlendPanel1.SuspendLayout()
         Me.GROUPTDS.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -216,9 +222,11 @@ Partial Class AccountsMaster
         Me.BlendPanel1.Controls.Add(Me.CHKCOMMON)
         Me.BlendPanel1.Controls.Add(Me.CMBGROUPOFCOMPANIES)
         Me.BlendPanel1.Controls.Add(Me.Label47)
+        Me.BlendPanel1.Controls.Add(Me.LBLDISCDESC)
         Me.BlendPanel1.Controls.Add(Me.CMBDEDUCTEETYPE)
         Me.BlendPanel1.Controls.Add(Me.Label46)
         Me.BlendPanel1.Controls.Add(Me.TXTINTPER)
+        Me.BlendPanel1.Controls.Add(Me.CHKRCM)
         Me.BlendPanel1.Controls.Add(Me.Label49)
         Me.BlendPanel1.Controls.Add(Me.CMBNATURE)
         Me.BlendPanel1.Controls.Add(Me.Label36)
@@ -869,6 +877,12 @@ Partial Class AccountsMaster
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.TXTEFFECTIVEPER)
+        Me.TabPage1.Controls.Add(Me.Label70)
+        Me.TabPage1.Controls.Add(Me.TXTWHOLESALEDISC)
+        Me.TabPage1.Controls.Add(Me.Label69)
+        Me.TabPage1.Controls.Add(Me.TXTRETAILDISC)
+        Me.TabPage1.Controls.Add(Me.Label68)
         Me.TabPage1.Controls.Add(Me.Label67)
         Me.TabPage1.Controls.Add(Me.CMBSUBTYPE)
         Me.TabPage1.Controls.Add(Me.CMDHINDI)
@@ -878,10 +892,8 @@ Partial Class AccountsMaster
         Me.TabPage1.Controls.Add(Me.TXTWHATSAPPNO)
         Me.TabPage1.Controls.Add(Me.TXTDELIVERYPINCODE)
         Me.TabPage1.Controls.Add(Me.Label35)
-        Me.TabPage1.Controls.Add(Me.LBLDISCDESC)
         Me.TabPage1.Controls.Add(Me.CMBDELIVERYAT)
         Me.TabPage1.Controls.Add(Me.Label21)
-        Me.TabPage1.Controls.Add(Me.CHKRCM)
         Me.TabPage1.Controls.Add(Me.TXTCDPER)
         Me.TabPage1.Controls.Add(Me.Label13)
         Me.TabPage1.Controls.Add(Me.CMBSEZTYPE)
@@ -981,6 +993,32 @@ Partial Class AccountsMaster
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Details"
         '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.BackColor = System.Drawing.Color.Transparent
+        Me.Label67.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.ForeColor = System.Drawing.Color.Black
+        Me.Label67.Location = New System.Drawing.Point(1019, 27)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(55, 14)
+        Me.Label67.TabIndex = 867
+        Me.Label67.Text = "Sub-Type"
+        '
+        'CMBSUBTYPE
+        '
+        Me.CMBSUBTYPE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBSUBTYPE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBSUBTYPE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CMBSUBTYPE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBSUBTYPE.FormattingEnabled = True
+        Me.CMBSUBTYPE.Items.AddRange(New Object() {"ACCOUNTS", "MILL", "WARPER", "SIZER", "WEAVER", "PROCESSOR", "JOBBER"})
+        Me.CMBSUBTYPE.Location = New System.Drawing.Point(1075, 23)
+        Me.CMBSUBTYPE.MaxDropDownItems = 14
+        Me.CMBSUBTYPE.Name = "CMBSUBTYPE"
+        Me.CMBSUBTYPE.Size = New System.Drawing.Size(159, 22)
+        Me.CMBSUBTYPE.TabIndex = 866
+        '
         'CMDHINDI
         '
         Me.CMDHINDI.BackColor = System.Drawing.Color.Transparent
@@ -1019,7 +1057,7 @@ Partial Class AccountsMaster
         Me.Label66.AutoSize = True
         Me.Label66.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label66.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label66.Location = New System.Drawing.Point(274, 135)
+        Me.Label66.Location = New System.Drawing.Point(267, 135)
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(81, 14)
         Me.Label66.TabIndex = 862
@@ -1050,7 +1088,7 @@ Partial Class AccountsMaster
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label35.Location = New System.Drawing.Point(529, 271)
+        Me.Label35.Location = New System.Drawing.Point(522, 271)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(75, 14)
         Me.Label35.TabIndex = 860
@@ -1061,7 +1099,7 @@ Partial Class AccountsMaster
         Me.LBLDISCDESC.AutoSize = True
         Me.LBLDISCDESC.Font = New System.Drawing.Font("Calibri", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLDISCDESC.ForeColor = System.Drawing.Color.Red
-        Me.LBLDISCDESC.Location = New System.Drawing.Point(697, 153)
+        Me.LBLDISCDESC.Location = New System.Drawing.Point(1068, 100)
         Me.LBLDISCDESC.Name = "LBLDISCDESC"
         Me.LBLDISCDESC.Size = New System.Drawing.Size(63, 11)
         Me.LBLDISCDESC.TabIndex = 858
@@ -1085,7 +1123,7 @@ Partial Class AccountsMaster
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label21.Location = New System.Drawing.Point(288, 271)
+        Me.Label21.Location = New System.Drawing.Point(283, 271)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(65, 14)
         Me.Label21.TabIndex = 857
@@ -1097,7 +1135,7 @@ Partial Class AccountsMaster
         Me.CHKRCM.AutoSize = True
         Me.CHKRCM.BackColor = System.Drawing.Color.Transparent
         Me.CHKRCM.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CHKRCM.Location = New System.Drawing.Point(715, 160)
+        Me.CHKRCM.Location = New System.Drawing.Point(1086, 114)
         Me.CHKRCM.Name = "CHKRCM"
         Me.CHKRCM.Size = New System.Drawing.Size(49, 18)
         Me.CHKRCM.TabIndex = 30
@@ -1118,7 +1156,7 @@ Partial Class AccountsMaster
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label13.Location = New System.Drawing.Point(531, 162)
+        Me.Label13.Location = New System.Drawing.Point(526, 162)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(71, 14)
         Me.Label13.TabIndex = 855
@@ -1269,7 +1307,7 @@ Partial Class AccountsMaster
         Me.Label50.AutoSize = True
         Me.Label50.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label50.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label50.Location = New System.Drawing.Point(525, 298)
+        Me.Label50.Location = New System.Drawing.Point(518, 298)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(79, 14)
         Me.Label50.TabIndex = 558
@@ -1354,7 +1392,7 @@ Partial Class AccountsMaster
         Me.Label45.BackColor = System.Drawing.Color.Transparent
         Me.Label45.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.ForeColor = System.Drawing.Color.Black
-        Me.Label45.Location = New System.Drawing.Point(552, 54)
+        Me.Label45.Location = New System.Drawing.Point(550, 54)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(47, 14)
         Me.Label45.TabIndex = 554
@@ -1400,7 +1438,7 @@ Partial Class AccountsMaster
         'TXTDISC
         '
         Me.TXTDISC.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTDISC.Location = New System.Drawing.Point(715, 131)
+        Me.TXTDISC.Location = New System.Drawing.Point(715, 158)
         Me.TXTDISC.Name = "TXTDISC"
         Me.TXTDISC.Size = New System.Drawing.Size(44, 22)
         Me.TXTDISC.TabIndex = 28
@@ -1411,7 +1449,7 @@ Partial Class AccountsMaster
         Me.Label43.AutoSize = True
         Me.Label43.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label43.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label43.Location = New System.Drawing.Point(671, 135)
+        Me.Label43.Location = New System.Drawing.Point(671, 162)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(42, 14)
         Me.Label43.TabIndex = 468
@@ -1423,7 +1461,7 @@ Partial Class AccountsMaster
         Me.Label31.BackColor = System.Drawing.Color.Transparent
         Me.Label31.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.ForeColor = System.Drawing.Color.Black
-        Me.Label31.Location = New System.Drawing.Point(567, 27)
+        Me.Label31.Location = New System.Drawing.Point(566, 27)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(31, 14)
         Me.Label31.TabIndex = 466
@@ -1449,7 +1487,7 @@ Partial Class AccountsMaster
         Me.Label42.BackColor = System.Drawing.Color.Transparent
         Me.Label42.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label42.ForeColor = System.Drawing.Color.Black
-        Me.Label42.Location = New System.Drawing.Point(298, 297)
+        Me.Label42.Location = New System.Drawing.Point(294, 297)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(54, 14)
         Me.Label42.TabIndex = 464
@@ -1554,7 +1592,7 @@ Partial Class AccountsMaster
         Me.Label40.BackColor = System.Drawing.Color.Transparent
         Me.Label40.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label40.ForeColor = System.Drawing.Color.Black
-        Me.Label40.Location = New System.Drawing.Point(560, 108)
+        Me.Label40.Location = New System.Drawing.Point(559, 108)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(38, 14)
         Me.Label40.TabIndex = 461
@@ -1586,7 +1624,7 @@ Partial Class AccountsMaster
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(307, 108)
+        Me.Label6.Location = New System.Drawing.Point(302, 108)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(46, 14)
         Me.Label6.TabIndex = 75
@@ -1598,7 +1636,7 @@ Partial Class AccountsMaster
         Me.Label38.BackColor = System.Drawing.Color.Transparent
         Me.Label38.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label38.ForeColor = System.Drawing.Color.Black
-        Me.Label38.Location = New System.Drawing.Point(543, 81)
+        Me.Label38.Location = New System.Drawing.Point(539, 81)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(58, 14)
         Me.Label38.TabIndex = 312
@@ -1609,7 +1647,7 @@ Partial Class AccountsMaster
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label5.Location = New System.Drawing.Point(303, 243)
+        Me.Label5.Location = New System.Drawing.Point(300, 243)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 14)
         Me.Label5.TabIndex = 74
@@ -1632,7 +1670,7 @@ Partial Class AccountsMaster
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label4.Location = New System.Drawing.Point(284, 54)
+        Me.Label4.Location = New System.Drawing.Point(280, 54)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(68, 14)
         Me.Label4.TabIndex = 72
@@ -1705,7 +1743,7 @@ Partial Class AccountsMaster
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label11.Location = New System.Drawing.Point(313, 216)
+        Me.Label11.Location = New System.Drawing.Point(310, 216)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(38, 14)
         Me.Label11.TabIndex = 86
@@ -1724,7 +1762,7 @@ Partial Class AccountsMaster
         '
         Me.txtpanno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtpanno.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpanno.Location = New System.Drawing.Point(600, 185)
+        Me.txtpanno.Location = New System.Drawing.Point(600, 212)
         Me.txtpanno.MaxLength = 10
         Me.txtpanno.Name = "txtpanno"
         Me.txtpanno.Size = New System.Drawing.Size(159, 22)
@@ -1746,7 +1784,7 @@ Partial Class AccountsMaster
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label12.Location = New System.Drawing.Point(552, 189)
+        Me.Label12.Location = New System.Drawing.Point(552, 216)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(45, 14)
         Me.Label12.TabIndex = 87
@@ -1784,7 +1822,7 @@ Partial Class AccountsMaster
         'txttinno
         '
         Me.txttinno.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttinno.Location = New System.Drawing.Point(600, 212)
+        Me.txttinno.Location = New System.Drawing.Point(1073, 185)
         Me.txttinno.Name = "txttinno"
         Me.txttinno.Size = New System.Drawing.Size(159, 22)
         Me.txttinno.TabIndex = 32
@@ -1795,7 +1833,7 @@ Partial Class AccountsMaster
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label27.Location = New System.Drawing.Point(304, 81)
+        Me.Label27.Location = New System.Drawing.Point(302, 81)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(46, 14)
         Me.Label27.TabIndex = 134
@@ -1806,7 +1844,7 @@ Partial Class AccountsMaster
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label19.Location = New System.Drawing.Point(552, 216)
+        Me.Label19.Location = New System.Drawing.Point(1025, 189)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(45, 14)
         Me.Label19.TabIndex = 97
@@ -1826,7 +1864,7 @@ Partial Class AccountsMaster
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label26.Location = New System.Drawing.Point(300, 27)
+        Me.Label26.Location = New System.Drawing.Point(296, 27)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(52, 14)
         Me.Label26.TabIndex = 132
@@ -2027,7 +2065,7 @@ Partial Class AccountsMaster
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label15.Location = New System.Drawing.Point(300, 189)
+        Me.Label15.Location = New System.Drawing.Point(295, 189)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(53, 14)
         Me.Label15.TabIndex = 109
@@ -2126,7 +2164,7 @@ Partial Class AccountsMaster
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1203, 394)
+        Me.TabPage2.Size = New System.Drawing.Size(1262, 394)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Bank Details"
         '
@@ -2306,31 +2344,65 @@ Partial Class AccountsMaster
         Me.Ep.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.Ep.ContainerControl = Me
         '
-        'Label67
+        'TXTRETAILDISC
         '
-        Me.Label67.AutoSize = True
-        Me.Label67.BackColor = System.Drawing.Color.Transparent
-        Me.Label67.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label67.ForeColor = System.Drawing.Color.Black
-        Me.Label67.Location = New System.Drawing.Point(1019, 27)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(55, 14)
-        Me.Label67.TabIndex = 867
-        Me.Label67.Text = "Sub-Type"
+        Me.TXTRETAILDISC.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTRETAILDISC.Location = New System.Drawing.Point(715, 185)
+        Me.TXTRETAILDISC.Name = "TXTRETAILDISC"
+        Me.TXTRETAILDISC.Size = New System.Drawing.Size(44, 22)
+        Me.TXTRETAILDISC.TabIndex = 868
+        Me.TXTRETAILDISC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'CMBSUBTYPE
+        'Label68
         '
-        Me.CMBSUBTYPE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CMBSUBTYPE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.CMBSUBTYPE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CMBSUBTYPE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMBSUBTYPE.FormattingEnabled = True
-        Me.CMBSUBTYPE.Items.AddRange(New Object() {"ACCOUNTS", "MILL", "WARPER", "SIZER", "WEAVER", "PROCESSOR", "JOBBER"})
-        Me.CMBSUBTYPE.Location = New System.Drawing.Point(1075, 23)
-        Me.CMBSUBTYPE.MaxDropDownItems = 14
-        Me.CMBSUBTYPE.Name = "CMBSUBTYPE"
-        Me.CMBSUBTYPE.Size = New System.Drawing.Size(159, 22)
-        Me.CMBSUBTYPE.TabIndex = 866
+        Me.Label68.AutoSize = True
+        Me.Label68.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label68.Location = New System.Drawing.Point(647, 189)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(66, 14)
+        Me.Label68.TabIndex = 869
+        Me.Label68.Text = "Retail Dics"
+        '
+        'TXTWHOLESALEDISC
+        '
+        Me.TXTWHOLESALEDISC.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTWHOLESALEDISC.Location = New System.Drawing.Point(600, 185)
+        Me.TXTWHOLESALEDISC.Name = "TXTWHOLESALEDISC"
+        Me.TXTWHOLESALEDISC.Size = New System.Drawing.Size(44, 22)
+        Me.TXTWHOLESALEDISC.TabIndex = 870
+        Me.TXTWHOLESALEDISC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label69.Location = New System.Drawing.Point(530, 189)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(67, 14)
+        Me.Label69.TabIndex = 871
+        Me.Label69.Text = "W.S. Dics %"
+        '
+        'TXTEFFECTIVEPER
+        '
+        Me.TXTEFFECTIVEPER.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTEFFECTIVEPER.Location = New System.Drawing.Point(716, 131)
+        Me.TXTEFFECTIVEPER.Name = "TXTEFFECTIVEPER"
+        Me.TXTEFFECTIVEPER.Size = New System.Drawing.Size(44, 22)
+        Me.TXTEFFECTIVEPER.TabIndex = 872
+        Me.TXTEFFECTIVEPER.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label70.Location = New System.Drawing.Point(650, 135)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(63, 14)
+        Me.Label70.TabIndex = 873
+        Me.Label70.Text = "Effective %"
         '
         'AccountsMaster
         '
@@ -2532,4 +2604,10 @@ Partial Class AccountsMaster
     Friend WithEvents Label53 As Label
     Friend WithEvents Label67 As Label
     Friend WithEvents CMBSUBTYPE As ComboBox
+    Friend WithEvents TXTRETAILDISC As TextBox
+    Friend WithEvents Label68 As Label
+    Friend WithEvents TXTWHOLESALEDISC As TextBox
+    Friend WithEvents Label69 As Label
+    Friend WithEvents TXTEFFECTIVEPER As TextBox
+    Friend WithEvents Label70 As Label
 End Class

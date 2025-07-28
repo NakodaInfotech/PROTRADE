@@ -3400,7 +3400,8 @@ LINE1:
                 Dim DT As DataTable = OBJCMN.search("ISNULL(LEDGERS.ACC_ADDLESS,'ADD') AS ADDLESS , ISNULL(LEDGERS.ACC_DISC,0) AS DISCPER ", "", "LEDGERS", " AND ACC_CMPNAME = '" & CMBCHARGES.Text.Trim & "' AND ACC_YEARID = " & YearId)
                 If DT.Rows.Count > 0 Then
                     If DT.Rows(0).Item("ADDLESS") = "LESS" Then
-                        If Val(TXTCHGSPER.Text.Trim) = 0 Then TXTCHGSPER.Text = "-" If Val(TXTCHGSPER.Text.Trim) = 0 Then
+                        If Val(TXTCHGSPER.Text.Trim) = 0 Then TXTCHGSPER.Text = "-"
+                        If Val(TXTCHGSPER.Text.Trim) = 0 Then
                             TXTCHGSPER.Text = "-"
                             If ClientName = "SOFTAS" And Val(DT.Rows(0).Item("DISCPER")) > 0 Then TXTCHGSPER.Text = Val(DT.Rows(0).Item("DISCPER")) * -1
                         End If

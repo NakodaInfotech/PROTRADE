@@ -26,3 +26,15 @@ D:\VSS\PROTRADE\DB\obj\Debug\DB.vbproj.GenerateResource.Cache
 D:\VSS\PROTRADE\DB\obj\Debug\DB.dll
 D:\VSS\PROTRADE\DB\obj\Debug\DB.xml
 D:\VSS\PROTRADE\DB\obj\Debug\DB.pdb
+D:\GIT\PROTRADE\DB\bin\Debug\DB.dll
+D:\GIT\PROTRADE\DB\bin\Debug\DB.pdb
+D:\GIT\PROTRADE\DB\bin\Debug\DB.xml
+D:\GIT\PROTRADE\DB\bin\Debug\RestSharp.dll
+D:\GIT\PROTRADE\DB\obj\Debug\DB.vbproj.AssemblyReference.cache
+D:\GIT\PROTRADE\DB\obj\Debug\DB.Resources.resources
+D:\GIT\PROTRADE\DB\obj\Debug\DB.vbproj.GenerateResource.cache
+D:\GIT\PROTRADE\DB\obj\Debug\DB.vbproj.CoreCompileInputs.cache
+D:\GIT\PROTRADE\DB\obj\Debug\DB.vbproj.Up2Date
+D:\GIT\PROTRADE\DB\obj\Debug\DB.dll
+D:\GIT\PROTRADE\DB\obj\Debug\DB.xml
+D:\GIT\PROTRADE\DB\obj\Debug\DB.pdb
