@@ -330,8 +330,8 @@
   <data name="GPCS.Caption" xml:space="preserve">
     <value>Pcs</value>
   </data>
-  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="GPCS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+  <assembly alias="DevExpress.Data.v25.1" name="DevExpress.Data.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GPCS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v25.1">
     <value>Sum</value>
   </data>
   <data name="GPCS.Visible" type="System.Boolean, mscorlib">
@@ -343,7 +343,7 @@
   <data name="GMTRS.Caption" xml:space="preserve">
     <value>Mtrs</value>
   </data>
-  <data name="GMTRS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+  <data name="GMTRS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v25.1">
     <value>Sum</value>
   </data>
   <data name="GMTRS.Visible" type="System.Boolean, mscorlib">
@@ -358,7 +358,7 @@
   <data name="GBALPCS.Caption" xml:space="preserve">
     <value>Bal Pcs</value>
   </data>
-  <data name="GBALPCS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+  <data name="GBALPCS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v25.1">
     <value>Sum</value>
   </data>
   <data name="GBALPCS.Visible" type="System.Boolean, mscorlib">
@@ -370,7 +370,7 @@
   <data name="GBALMTRS.Caption" xml:space="preserve">
     <value>Bal Mtrs</value>
   </data>
-  <data name="GBALMTRS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v15.1">
+  <data name="GBALMTRS.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v25.1">
     <value>Sum</value>
   </data>
   <data name="GBALMTRS.Visible" type="System.Boolean, mscorlib">
@@ -404,7 +404,7 @@
     <value>gridbilldetails</value>
   </data>
   <data name="&gt;&gt;gridbilldetails.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridbilldetails.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
@@ -495,67 +495,67 @@
     <value>gridbill</value>
   </data>
   <data name="&gt;&gt;gridbill.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GGRNNO.Name" xml:space="preserve">
     <value>GGRNNO</value>
   </data>
   <data name="&gt;&gt;GGRNNO.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GLOTNO.Name" xml:space="preserve">
     <value>GLOTNO</value>
   </data>
   <data name="&gt;&gt;GLOTNO.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GDATE.Name" xml:space="preserve">
     <value>GDATE</value>
   </data>
   <data name="&gt;&gt;GDATE.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GNAME.Name" xml:space="preserve">
     <value>GNAME</value>
   </data>
   <data name="&gt;&gt;GNAME.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GDYEINGNAME.Name" xml:space="preserve">
     <value>GDYEINGNAME</value>
   </data>
   <data name="&gt;&gt;GDYEINGNAME.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GPCS.Name" xml:space="preserve">
     <value>GPCS</value>
   </data>
   <data name="&gt;&gt;GPCS.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GMTRS.Name" xml:space="preserve">
     <value>GMTRS</value>
   </data>
   <data name="&gt;&gt;GMTRS.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GBALPCS.Name" xml:space="preserve">
     <value>GBALPCS</value>
   </data>
   <data name="&gt;&gt;GBALPCS.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GBALMTRS.Name" xml:space="preserve">
     <value>GBALMTRS</value>
   </data>
   <data name="&gt;&gt;GBALMTRS.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GTYPE.Name" xml:space="preserve">
     <value>GTYPE</value>
   </data>
   <data name="&gt;&gt;GTYPE.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;PrintToolStripButton.Name" xml:space="preserve">
     <value>PrintToolStripButton</value>
