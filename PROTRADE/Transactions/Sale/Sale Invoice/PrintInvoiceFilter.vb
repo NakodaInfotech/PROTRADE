@@ -10,6 +10,7 @@ Public Class PrintInvoiceFilter
     Public TEMPSTATECODE As String
     Public BLANKPAPER As Boolean = False
     Public PARTYCHANGEADD As String = ""
+    Public EFFECTIVERATE As Boolean = False
 
     Dim INVOICEMAIL As Boolean = False
 
@@ -41,6 +42,7 @@ Public Class PrintInvoiceFilter
                     Dim OBJINVOICE As New saledesign
                     OBJINVOICE.FRMSTRING = "INVOICE"
                     OBJINVOICE.BLANKPAPER = BLANKPAPER
+                    OBJINVOICE.EFFECTIVERATE = EFFECTIVERATE
                     OBJINVOICE.PARTYCHANGEADD = PARTYCHANGEADD
                     OBJINVOICE.IGSTFORMAT = False
                     OBJINVOICE.INVOICECOPYNAME = CHKCUSTOMER.Text
@@ -60,6 +62,7 @@ Public Class PrintInvoiceFilter
                     Dim OBJINVOICE As New saledesign
                     OBJINVOICE.FRMSTRING = "INVOICE"
                     OBJINVOICE.BLANKPAPER = BLANKPAPER
+                    OBJINVOICE.EFFECTIVERATE = EFFECTIVERATE
                     OBJINVOICE.PARTYCHANGEADD = PARTYCHANGEADD
                     OBJINVOICE.IGSTFORMAT = False
                     OBJINVOICE.INVOICECOPYNAME = CHKDUPLICATE.Text
@@ -75,6 +78,7 @@ Public Class PrintInvoiceFilter
                     Dim OBJINVOICE As New saledesign
                     OBJINVOICE.FRMSTRING = "INVOICE"
                     OBJINVOICE.BLANKPAPER = BLANKPAPER
+                    OBJINVOICE.EFFECTIVERATE = EFFECTIVERATE
                     OBJINVOICE.PARTYCHANGEADD = PARTYCHANGEADD
                     OBJINVOICE.IGSTFORMAT = False
                     OBJINVOICE.INVOICECOPYNAME = CHKOFFICE.Text
@@ -90,6 +94,7 @@ Public Class PrintInvoiceFilter
                     Dim OBJINVOICE As New saledesign
                     OBJINVOICE.FRMSTRING = "INVOICE"
                     OBJINVOICE.BLANKPAPER = BLANKPAPER
+                    OBJINVOICE.EFFECTIVERATE = EFFECTIVERATE
                     OBJINVOICE.PARTYCHANGEADD = PARTYCHANGEADD
                     OBJINVOICE.IGSTFORMAT = False
                     OBJINVOICE.INVOICETRANS = True
@@ -121,6 +126,7 @@ Public Class PrintInvoiceFilter
                     OBJINVOICE.FRMSTRING = "INVOICE"
                     OBJINVOICE.DIRECTMAIL = INVOICEMAIL
                     OBJINVOICE.PARTYCHANGEADD = PARTYCHANGEADD
+                    OBJINVOICE.EFFECTIVERATE = EFFECTIVERATE
                     If CHKTRANSPORT.Checked = True Then OBJINVOICE.INVOICETRANS = True
                     If CHKCUSTOMER.CheckState = CheckState.Checked Then
                         OBJINVOICE.INVOICECOPYNAME = CHKCUSTOMER.Text

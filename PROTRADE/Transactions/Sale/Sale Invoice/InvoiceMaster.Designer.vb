@@ -264,6 +264,8 @@ Partial Class InvoiceMaster
         Me.EAMT = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ETAXID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.CMBDISPATCHFROM = New System.Windows.Forms.ComboBox()
         Me.ACKDATE = New System.Windows.Forms.DateTimePicker()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.TXTACKNO = New System.Windows.Forms.TextBox()
@@ -378,8 +380,7 @@ Partial Class InvoiceMaster
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.PRINTDIALOG = New System.Windows.Forms.PrintDialog()
         Me.PRINTDOC = New System.Drawing.Printing.PrintDocument()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.CMBDISPATCHFROM = New System.Windows.Forms.ComboBox()
+        Me.CHKEFFECTIVERATE = New System.Windows.Forms.CheckBox()
         Me.GroupBox5.SuspendLayout()
         CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -699,6 +700,7 @@ Partial Class InvoiceMaster
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.CHKEFFECTIVERATE)
         Me.BlendPanel1.Controls.Add(Me.TXTTOTALWITHGST)
         Me.BlendPanel1.Controls.Add(Me.CHKTCS)
         Me.BlendPanel1.Controls.Add(Me.TXTTCSPER)
@@ -3039,6 +3041,31 @@ Partial Class InvoiceMaster
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "3. Additional Details"
         '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.BackColor = System.Drawing.Color.Transparent
+        Me.Label60.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(27, 13)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(85, 14)
+        Me.Label60.TabIndex = 937
+        Me.Label60.Text = "Dispatch From"
+        '
+        'CMBDISPATCHFROM
+        '
+        Me.CMBDISPATCHFROM.AutoCompleteCustomSource.AddRange(New String() {""})
+        Me.CMBDISPATCHFROM.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBDISPATCHFROM.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBDISPATCHFROM.BackColor = System.Drawing.Color.White
+        Me.CMBDISPATCHFROM.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBDISPATCHFROM.FormattingEnabled = True
+        Me.CMBDISPATCHFROM.Items.AddRange(New Object() {""})
+        Me.CMBDISPATCHFROM.Location = New System.Drawing.Point(113, 9)
+        Me.CMBDISPATCHFROM.Name = "CMBDISPATCHFROM"
+        Me.CMBDISPATCHFROM.Size = New System.Drawing.Size(272, 22)
+        Me.CMBDISPATCHFROM.TabIndex = 936
+        '
         'ACKDATE
         '
         Me.ACKDATE.CustomFormat = "dd/MM/yyyy"
@@ -4391,30 +4418,17 @@ Partial Class InvoiceMaster
         Me.PRINTDIALOG.ShowHelp = True
         Me.PRINTDIALOG.UseEXDialog = True
         '
-        'Label60
+        'CHKEFFECTIVERATE
         '
-        Me.Label60.AutoSize = True
-        Me.Label60.BackColor = System.Drawing.Color.Transparent
-        Me.Label60.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label60.Location = New System.Drawing.Point(27, 13)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(85, 14)
-        Me.Label60.TabIndex = 937
-        Me.Label60.Text = "Dispatch From"
-        '
-        'CMBDISPATCHFROM
-        '
-        Me.CMBDISPATCHFROM.AutoCompleteCustomSource.AddRange(New String() {""})
-        Me.CMBDISPATCHFROM.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CMBDISPATCHFROM.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.CMBDISPATCHFROM.BackColor = System.Drawing.Color.White
-        Me.CMBDISPATCHFROM.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMBDISPATCHFROM.FormattingEnabled = True
-        Me.CMBDISPATCHFROM.Items.AddRange(New Object() {""})
-        Me.CMBDISPATCHFROM.Location = New System.Drawing.Point(113, 9)
-        Me.CMBDISPATCHFROM.Name = "CMBDISPATCHFROM"
-        Me.CMBDISPATCHFROM.Size = New System.Drawing.Size(272, 22)
-        Me.CMBDISPATCHFROM.TabIndex = 936
+        Me.CHKEFFECTIVERATE.AutoSize = True
+        Me.CHKEFFECTIVERATE.BackColor = System.Drawing.Color.Transparent
+        Me.CHKEFFECTIVERATE.Location = New System.Drawing.Point(1034, 3)
+        Me.CHKEFFECTIVERATE.Name = "CHKEFFECTIVERATE"
+        Me.CHKEFFECTIVERATE.Size = New System.Drawing.Size(98, 18)
+        Me.CHKEFFECTIVERATE.TabIndex = 919
+        Me.CHKEFFECTIVERATE.Text = "Effective Rate"
+        Me.CHKEFFECTIVERATE.UseVisualStyleBackColor = False
+        Me.CHKEFFECTIVERATE.Visible = False
         '
         'InvoiceMaster
         '
@@ -4783,4 +4797,5 @@ Partial Class InvoiceMaster
     Friend WithEvents Label59 As Label
     Friend WithEvents Label60 As Label
     Friend WithEvents CMBDISPATCHFROM As ComboBox
+    Friend WithEvents CHKEFFECTIVERATE As CheckBox
 End Class

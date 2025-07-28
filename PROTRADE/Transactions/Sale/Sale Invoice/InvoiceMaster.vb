@@ -1240,6 +1240,7 @@ Public Class InvoiceMaster
             OBJPRINT.AGENTNAME = CMBAGENT.Text.Trim
             OBJPRINT.TEMPSTATECODE = TXTSTATECODE.Text.Trim
             OBJPRINT.BLANKPAPER = CHKBLANKPAPER.Checked
+            OBJPRINT.EFFECTIVERATE = CHKEFFECTIVERATE.Checked
 
             OBJPRINT.ShowDialog()
 
@@ -4007,160 +4008,8 @@ LINE1:
                 CHKBILLDISPUTE.Enabled = False
             End If
 
-            If ClientName = "INDRAPUJAIMPEX" Then CHKBLANKPAPER.CheckState = CheckState.Checked
-
-            If ClientName = "PARAS" Then LBLCATEGORY.Visible = True
             TXTINVOICENO.TabStop = ALLOWMANUALINVNO
-
-            If ClientName = "NVAHAN" Or ClientName = "SAKARIA" Then
-                txtrefno.Width = 132
-                LBLPURNAME.Visible = True
-                TXTPURNAME.Visible = True
-                If ClientName = "NVAHAN" Then
-                    CMBQUALITY.TabStop = False
-                    CMBDESIGN.TabStop = False
-                    CMBSHADE.TabStop = False
-                    TXTDESCRIPTION.TabStop = False
-                End If
-            End If
-
-            If ClientName = "SKF" Or ClientName = "MASHOK" Or ClientName = "NIRAJ" Or ClientName = "SOFTAS" Or ClientName = "SONAL" Then
-                If ClientName <> "NIRAJ" Then LBLPACKING.Text = "Dyeing Name"
-                txtchallan.ReadOnly = False
-                txtchallan.TabStop = True
-                CHALLANDATE.TabStop = True
-            End If
-
-            If ClientName = "NIRAJ" Or ClientName = "DETLINE" Then
-                LBLRATE.Visible = True
-            End If
-
-            If ClientName = "SOFTAS" Then
-                CMBQUALITY.TabStop = False
-                CMBDESIGN.TabStop = False
-                CMBSHADE.TabStop = False
-                TXTBALENO.TabStop = False
-            End If
-
-            If ClientName = "BARKHA" Or ClientName = "SHUBHI" Then
-                GDESCRIPTION.HeaderText = "Stamping"
-                LBLBALEFROM.Text = "Weight"
-                LBLBALETO.Visible = True
-                TXTBALENOTO.Visible = True
-                LBLBALETO.Text = "Freight"
-                LBLREFNO.Text = "Block Sticker"
-
-            End If
-
-
-
-            If ClientName = "KANVASU" Then
-                LBLBALEFROM.Text = "Total Wt"
-                LBLBALETO.Visible = False
-                TXTBALENOTO.Visible = False
-            End If
-
-            If ClientName = "KDFAB" Or ClientName = "SANGHVI" Or ClientName = "KOTHARI" Or ClientName = "SAKARIA" Or ClientName = "NVAHAN" Or ClientName = "SUCCESS" Or ClientName = "NIRAJ" Or ClientName = "TCOT" Or ClientName = "SOFTAS" Or ClientName = "RMANILAL" Or ClientName = "YUMILONE" Or ClientName = "YASHVI" Then
-                LBLBALEFROM.Text = "Bls/Bundle"
-                LBLBALETO.Visible = False
-                TXTBALENOTO.Visible = False
-                If ClientName = "SANGHVI" Then
-                    GSPDISCPER.HeaderText = "Brk%"
-                    GSPDISCAMT.HeaderText = "Brk Amt"
-                End If
-            End If
-
-            If ClientName = "MANINATH" Then
-                GSPDISCPER.HeaderText = "C.D.%"
-                GSPDISCAMT.HeaderText = "C.D. Amt"
-                GSPDISCPER.HeaderText = "Brk%"
-                GSPDISCAMT.HeaderText = "Brk Amt"
-            End If
-
-            If ClientName = "PURPLE" Or ClientName = "YAMUNESH" Or ClientName = "CC" Or ClientName = "SHREEDEV" Then
-                CHKBARCODE.Visible = True
-                CHKBARCODE.Enabled = True
-                CHKBARCODE.Checked = True
-                CHKRETAIL.Visible = True
-                CHKRETAIL.CheckState = CheckState.Checked
-                CMDSELECTGDN.Enabled = True
-            Else
-                CHKBARCODE.Visible = False
-                CMDSELECTGDN.Enabled = True
-                CHKRETAIL.CheckState = CheckState.Unchecked
-            End If
-
-            If ClientName = "YAMUNESH" Then
-                Gpcs.ReadOnly = False
-                txtrefno.Visible = False
-                LBLREFNO.Visible = False
-                Label2.Visible = False
-                txtchallan.Visible = False
-                Label10.Visible = False
-                CHALLANDATE.Visible = False
-
-                CMBQUALITY.Visible = False
-                GQUALITY.Visible = False
-                CMBDESIGN.Visible = False
-                GDESIGN.Visible = False
-                CMBSHADE.Visible = False
-                GSHADE.Visible = False
-                TXTBALENO.Visible = False
-                GBALENO.Visible = False
-                LBLTOTALBALES.Visible = False
-                TXTCUT.Visible = False
-                GCUT.Visible = False
-                TXTMTRS.Visible = False
-                Gmtrs.Visible = False
-                lbltotalmtrs.Visible = False
-
-                TXTDESCRIPTION.Left = TXTHSNCODE.Left + TXTHSNCODE.Width
-                TXTPCS.Left = TXTDESCRIPTION.Left + TXTDESCRIPTION.Width
-                TXTRATE.Left = TXTPCS.Left + TXTPCS.Width
-                CMBPER.Left = TXTRATE.Left + TXTRATE.Width
-                TXTAMT.Left = CMBPER.Left + CMBPER.Width
-
-                LBLTOTAL.Left = TXTHSNCODE.Left + TXTHSNCODE.Width
-                lbltotalpcs.Left = TXTPCS.Left
-                LBLTOTALAMT.Left = TXTAMT.Left
-            End If
-
-            If ClientName = "DRDRAPES" And UserName <> "Admin" Then
-                GRATE.ReadOnly = True
-                TXTRATE.ReadOnly = True
-            End If
-
-            If ClientName = "SONAL" Then
-                CMBQUALITY.TabStop = False
-                CMBDESIGN.TabStop = False
-                CMBSHADE.TabStop = False
-                TXTDESCRIPTION.TabStop = False
-                TXTBALENO.TabStop = False
-                TXTCUT.TabStop = False
-            End If
-
-            If ClientName = "AVIS" Then
-                LBLCITY.Text = "Delivery To"
-                TXTINVOICENO.TabStop = False
-                INVOICEDATE.TabStop = False
-                LBLGATEPASS.Visible = True
-                TXTGATEPASSNO.Visible = True
-                CMDSELECTGDN.Text = "S&elect GP"
-                GPARTYPONO.ReadOnly = False
-                GFROMNO.Visible = True
-                GRIDINVOICE.Width = GRIDINVOICE.Width + 100
-            End If
-
-            If ClientName = "SUPRIYA" Then
-                LBLHASTE.Visible = True
-                CMBHASTE.Visible = True
-            End If
-
-            If ClientName = "GELATO" Then
-                GSHADE.HeaderText = "Size"
-                LBLREFNO.Text = "Disc %"
-                txtrefno.TextAlign = HorizontalAlignment.Right
-            End If
+            If ClientName = "REAL" Then CHKEFFECTIVERATE.Visible = True
 
         Catch ex As Exception
             Throw ex

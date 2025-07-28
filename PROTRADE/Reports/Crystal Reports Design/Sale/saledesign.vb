@@ -54,6 +54,7 @@ Public Class saledesign
     Public COMM As Double
     Public PRINTSETTING As Object = Nothing
     Public PARTYCHANGEADD As String = ""
+    Public EFFECTIVERATE As Boolean = False
 
     Dim fromD
     Dim toD
