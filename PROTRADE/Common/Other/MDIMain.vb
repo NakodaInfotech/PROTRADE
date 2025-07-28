@@ -3741,6 +3741,9 @@ Public Class MDIMain
                 ALPARAVAL.Add(0)    'TDSONGTOTAL
                 ALPARAVAL.Add("")   'HINDINAME
                 ALPARAVAL.Add("ACCOUNTS")   'SUBTYPE
+                ALPARAVAL.Add(0)    'EFFECTIVEPER
+                ALPARAVAL.Add(0)    'WHOLESALEDISC
+                ALPARAVAL.Add(0)    'RETAILDISC
 
                 OBJSM.alParaval = ALPARAVAL
                 Dim INTRES As Integer = OBJSM.SAVE()
