@@ -330,6 +330,11 @@ Public Class AccountsMaster
 
                     TXTHINDINAME.Text = dttable.Rows(0).Item("HINDINAME")
                     CMBSUBTYPE.Text = dttable.Rows(0).Item("SUBTYPE")
+
+                    TXTEFFECTIVEPER.Text = dttable.Rows(0).Item("EFFECTIVEPER").ToString
+                    TXTWHOLESALEDISC.Text = dttable.Rows(0).Item("WHOLESALEDISC").ToString
+                    TXTRETAILDISC.Text = dttable.Rows(0).Item("RETAILDISC").ToString
+
                 End If
 
             End If
@@ -610,6 +615,10 @@ NEXTLINE:
             alParaval.Add(CMBSUBTYPE.Text.Trim)
 
 
+            alParaval.Add(Val(TXTEFFECTIVEPER.Text.Trim))
+            alParaval.Add(Val(TXTWHOLESALEDISC.Text.Trim))
+            alParaval.Add(Val(TXTRETAILDISC.Text.Trim))
+
             Dim objAccountsMaster As New ClsAccountsMaster
             objAccountsMaster.alParaval = alParaval
             objAccountsMaster.frmstring = frmstring
@@ -722,6 +731,11 @@ NEXTLINE:
         TXTMSMENO.Clear()
         TXTHINDINAME.Clear()
         CMBSUBTYPE.Text = ""
+
+        TXTEFFECTIVEPER.Clear()
+        TXTWHOLESALEDISC.Clear()
+        TXTRETAILDISC.Clear()
+
         'EDIT = False
 
         'cmbregister.DataSource = Nothing

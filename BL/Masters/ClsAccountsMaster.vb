@@ -216,6 +216,13 @@ Public Class ClsAccountsMaster
                 .Add(New SqlClient.SqlParameter("@SUBTYPE", alParaval(I)))
                 I += 1
 
+                .Add(New SqlClient.SqlParameter("@EFFECTIVEPER", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@WHOLESALEDISC", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@RETAILDISC", alParaval(I)))
+                I += 1
+
 
 
             End With
@@ -428,6 +435,13 @@ Public Class ClsAccountsMaster
                 .Add(New SqlClient.SqlParameter("@HINDINAME", alParaval(I)))
                 I += 1
                 .Add(New SqlClient.SqlParameter("@SUBTYPE", alParaval(I)))
+                I += 1
+
+                .Add(New SqlClient.SqlParameter("@EFFECTIVEPER", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@WHOLESALEDISC", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@RETAILDISC", alParaval(I)))
                 I += 1
 
                 .Add(New SqlClient.SqlParameter("@AccountId", alParaval(I)))
