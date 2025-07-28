@@ -242,6 +242,7 @@ SKIPINVOICE:
                 CRPO.ReportSource = RPTINVOICE_TOTALLEFT
                 RPTINVOICE_TOTALLEFT.DataDefinition.FormulaFields("INVOICECOPYNAME").Text = "'" & INVOICECOPYNAME & "'"
                 If BLANKPAPER = True Then RPTINVOICE_TOTALLEFT.DataDefinition.FormulaFields("WHITELABEL").Text = 1 Else RPTINVOICE_TOTALLEFT.DataDefinition.FormulaFields("WHITELABEL").Text = 0
+                If EFFECTIVERATE = True Then RPTINVOICE_TOTALLEFT.DataDefinition.FormulaFields("SHOWEFFECTIVERATE").Text = 1 Else RPTINVOICE_TOTALLEFT.DataDefinition.FormulaFields("SHOWEFFECTIVERATE").Text = 0
 
 
             ElseIf FRMSTRING = "PROFORMAINVOICE" Then

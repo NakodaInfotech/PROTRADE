@@ -9,22 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\reports\\crystal reports design\\sale\\saledesign.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\reports\\crystal reports design\\sale\\saledesign.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\printinvoicefilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\printinvoicefilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\printinvoicefilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\printinvoicefilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,58 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InvoiceReport_TOTALLEFT.rpt",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
-              "RelativeDocumentMoniker": "PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
-              "RelativeToolTip": "PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-07-28T08:09:39.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "saledesign.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
-              "RelativeToolTip": "PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T08:07:27.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PrintInvoiceFilter.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb [Design]",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T08:07:04.263Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PrintInvoiceFilter.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\PrintInvoiceFilter.vb",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T08:06:25.205Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -96,28 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InvoiceMaster.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ViewState": "AgIAAMAEAAAAAAAAAAArwNoEAAA9AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "saledesign.vb",
+              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
+              "RelativeDocumentMoniker": "PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
+              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
+              "RelativeToolTip": "PROTRADE\\Reports\\Crystal Reports Design\\Sale\\saledesign.vb",
+              "ViewState": "AgIAANUAAAAAAAAAAAAAAPYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T08:04:10.484Z",
+              "WhenOpened": "2025-07-28T08:30:52.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InvoiceMaster.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb [Design]",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T08:03:31.684Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 0,
+              "Title": "InvoiceReport_TOTALLEFT.rpt",
+              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
+              "RelativeDocumentMoniker": "PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
+              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
+              "RelativeToolTip": "PROTRADE\\Reports\\Crystal Reports\\Sale Invoice\\InvoiceReport_TOTALLEFT.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-07-28T08:26:05.304Z",
+              "EditorCaption": ""
             }
           ]
         }
