@@ -2415,10 +2415,23 @@ LINE1:
                     'If (ClientName = "YASHVI" Or ClientName = "SBA" Or ClientName = "DEVEN" Or ClientName = "SOFTAS" Or ClientName = "BARKHA" Or ClientName = "REAL" Or ClientName = "MOMAI" Or ClientName = "SHREEVALLABH") Then
                     'INITIALLY IT WAS WITH RESPECT TO THE ABOVE MENTIONED CLIENT, THEN CHANGED WITH RESPECT TO SALEAUTODISCOUNT
                     If SALEAUTODISCOUNT = True And CMBSCREENTYPE.Text <> "LINE GST" Then
+
+                        For Each DTROW As DataGridViewRow In GRIDCHGS.Rows
+                            If DTROW.Cells(ECHARGES.Index).Value = "WHOLESALE DISCOUNT" Then GoTo LINE1
+                        Next
+                        If Val(DT.Rows(0).Item("WHOLESALEDISC")) > 0 Then GRIDCHGS.Rows.Add(GRIDCHGS.RowCount + 1, "WHOLESALE DISCOUNT", Val(DT.Rows(0).Item("WHOLESALEDISC")) * -1, 0, 0)
+
+
                         For Each DTROW As DataGridViewRow In GRIDCHGS.Rows
                             If DTROW.Cells(ECHARGES.Index).Value = "DISCOUNT GIVEN" Then GoTo LINE1
                         Next
                         If Val(DT.Rows(0).Item("DISCPER")) > 0 Then GRIDCHGS.Rows.Add(GRIDCHGS.RowCount + 1, "DISCOUNT GIVEN", Val(DT.Rows(0).Item("DISCPER")) * -1, 0, 0)
+
+
+                        For Each DTROW As DataGridViewRow In GRIDCHGS.Rows
+                            If DTROW.Cells(ECHARGES.Index).Value = "RETAIL DISCOUNT" Then GoTo LINE1
+                        Next
+                        If Val(DT.Rows(0).Item("RETAILDISC")) > 0 Then GRIDCHGS.Rows.Add(GRIDCHGS.RowCount + 1, "RETAIL DISCOUNT", Val(DT.Rows(0).Item("RETAILDISC")) * -1, 0, 0)
 
 
                         For Each DTROW As DataGridViewRow In GRIDCHGS.Rows
