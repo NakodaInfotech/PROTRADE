@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\PROTRADE\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale invoice\\invoicemaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|d:\\git\\protrade\\protrade\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{A1AF310A-FFEB-469E-A3A5-23D9971D3F1E}|PROTRADE\\PROTRADE.vbproj|solutionrelative:protrade\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,69 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InvoiceDetails.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "ViewState": "AgIAAJcAAAAAAAAAAAArwOoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T12:47:13.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InvoiceMaster.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb [Design]",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T12:47:01.064Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvoiceDetails.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb [Design]",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceDetails.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T12:46:52.182Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SaleOrder.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
-              "ViewState": "AgIAALIJAAAAAAAAAAAmwM4JAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T12:44:17.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InvoiceMaster.vb",
-              "DocumentMoniker": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeDocumentMoniker": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ToolTip": "D:\\GIT\\PROTRADE\\PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "RelativeToolTip": "PROTRADE\\Transactions\\Sale\\Sale Invoice\\InvoiceMaster.vb",
-              "ViewState": "AgIAAPAOAAAAAAAAAAAmwPcOAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-28T12:40:20.611Z",
-              "EditorCaption": ""
             }
           ]
         }
