@@ -71,6 +71,7 @@ Partial Class SaleOrderClose
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.PrintToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.cmdok = New System.Windows.Forms.Button()
+        Me.GNOTE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,7 +121,7 @@ Partial Class SaleOrderClose
         Me.RBPENDING.Checked = True
         Me.RBPENDING.Location = New System.Drawing.Point(118, 31)
         Me.RBPENDING.Name = "RBPENDING"
-        Me.RBPENDING.Size = New System.Drawing.Size(68, 19)
+        Me.RBPENDING.Size = New System.Drawing.Size(69, 19)
         Me.RBPENDING.TabIndex = 806
         Me.RBPENDING.TabStop = True
         Me.RBPENDING.Text = "Pending"
@@ -147,7 +148,7 @@ Partial Class SaleOrderClose
         Me.Label9.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(809, 32)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 14)
+        Me.Label9.Size = New System.Drawing.Size(48, 14)
         Me.Label9.TabIndex = 578
         Me.Label9.Text = "Reason"
         '
@@ -168,7 +169,7 @@ Partial Class SaleOrderClose
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(661, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 14)
+        Me.Label2.Size = New System.Drawing.Size(66, 14)
         Me.Label2.TabIndex = 577
         Me.Label2.Text = "Close Date"
         '
@@ -193,7 +194,7 @@ Partial Class SaleOrderClose
         Me.Label21.ForeColor = System.Drawing.Color.Red
         Me.Label21.Location = New System.Drawing.Point(489, 32)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(168, 14)
+        Me.Label21.Size = New System.Drawing.Size(186, 14)
         Me.Label21.TabIndex = 442
         Me.Label21.Text = "Please Enter Closed Date to Save"
         '
@@ -219,7 +220,7 @@ Partial Class SaleOrderClose
         Me.CHKSELECTALL.ForeColor = System.Drawing.Color.Black
         Me.CHKSELECTALL.Location = New System.Drawing.Point(12, 32)
         Me.CHKSELECTALL.Name = "CHKSELECTALL"
-        Me.CHKSELECTALL.Size = New System.Drawing.Size(72, 18)
+        Me.CHKSELECTALL.Size = New System.Drawing.Size(77, 18)
         Me.CHKSELECTALL.TabIndex = 257
         Me.CHKSELECTALL.Text = "Select All"
         Me.CHKSELECTALL.UseVisualStyleBackColor = False
@@ -240,7 +241,7 @@ Partial Class SaleOrderClose
         '
         Me.gridbill.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridbill.Appearance.Row.Options.UseFont = True
-        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GCLOSED, Me.GSONO, Me.GGRIDSRNO, Me.GDATE, Me.GNAME, Me.GAGENTNAME, Me.GCITY, Me.GITEMNAME, Me.GDESIGNNO, Me.GQUALITY, Me.GCOLOR, Me.GGRIDPONO, Me.GPCS, Me.GCUT, Me.GMTRS, Me.GRATE, Me.GRECDPCS, Me.GRECDMTRS, Me.GBALPCS, Me.GBALMTRS, Me.GBALPER, Me.GSTOCKPCS, Me.GSTOCKMTRS, Me.GPARTYPONO, Me.GDELDATE, Me.GREMARKS, Me.GTYPE, Me.GFORWARD, Me.GCLOSEDDATE, Me.GREASON})
+        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GCLOSED, Me.GSONO, Me.GGRIDSRNO, Me.GDATE, Me.GNAME, Me.GAGENTNAME, Me.GCITY, Me.GITEMNAME, Me.GDESIGNNO, Me.GQUALITY, Me.GCOLOR, Me.GGRIDPONO, Me.GPCS, Me.GCUT, Me.GMTRS, Me.GRATE, Me.GRECDPCS, Me.GRECDMTRS, Me.GBALPCS, Me.GBALMTRS, Me.GBALPER, Me.GSTOCKPCS, Me.GSTOCKMTRS, Me.GPARTYPONO, Me.GDELDATE, Me.GREMARKS, Me.GTYPE, Me.GFORWARD, Me.GCLOSEDDATE, Me.GREASON, Me.GNOTE})
         Me.gridbill.GridControl = Me.gridbilldetails
         Me.gridbill.Name = "gridbill"
         Me.gridbill.OptionsView.ColumnAutoWidth = False
@@ -293,7 +294,7 @@ Partial Class SaleOrderClose
         '
         Me.GNAME.Caption = "Name"
         Me.GNAME.FieldName = "NAME"
-        Me.GNAME.ImageIndex = 0
+        Me.GNAME.ImageOptions.ImageIndex = 0
         Me.GNAME.Name = "GNAME"
         Me.GNAME.OptionsColumn.AllowEdit = False
         Me.GNAME.Visible = True
@@ -620,6 +621,15 @@ Partial Class SaleOrderClose
         Me.cmdok.Text = "&Save"
         Me.cmdok.UseVisualStyleBackColor = False
         '
+        'GNOTE
+        '
+        Me.GNOTE.Caption = "Note"
+        Me.GNOTE.FieldName = "NOTE"
+        Me.GNOTE.Name = "GNOTE"
+        Me.GNOTE.Visible = True
+        Me.GNOTE.VisibleIndex = 28
+        Me.GNOTE.Width = 280
+        '
         'SaleOrderClose
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -690,4 +700,5 @@ Partial Class SaleOrderClose
     Friend WithEvents RBPENDING As RadioButton
     Friend WithEvents GSTOCKPCS As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GSTOCKMTRS As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GNOTE As DevExpress.XtraGrid.Columns.GridColumn
 End Class
